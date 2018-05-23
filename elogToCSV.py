@@ -3,8 +3,8 @@
 """
 @author: Antonio Guillen-Perez
 @email: antonio.guillen@edu.upct.es
-license = GPL
-version = 0.1
+license = see License
+version = 1.0
 status = production
 
 """
