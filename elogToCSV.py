@@ -47,8 +47,8 @@ def elogToCSV(path, local_path):
     tx_columns = list(zip(*(str(row).strip().split(" ") for row in tx_frames_raw)))
     
     # Faster and with less use of RAM
-    tx_frames = np.asmatrix(tx_columns)[(13,4),:]
-    #tx_frames = np.asmatrix([tx_columns[i] for i in [13,4]])
+#    tx_frames = np.asmatrix(tx_columns)[(13,4),:]
+    tx_frames = np.asmatrix([tx_columns[i] for i in [13,4]])
 
     for line in rx_index:
         rx_frames_raw.append(lines[line])
